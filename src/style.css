@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.swal2-container { z-index: 9000 !important; /* Adjust as needed */ }
+.custom-checkbox:hover {
+  box-shadow: none; /* Removes the elliptical shadow */
+  background-color: transparent; /* Ensure no background color on hover */
+}
+
+
+
+.scrollbars::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollbars::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent;
+  border-radius: 10px;
+}
+.scrollbars::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+.scrollbars.show::-webkit-scrollbar-thumb, .scrollbars:hover::-webkit-scrollbar-thumb {
+  background: #777;
+}
+
+
+
+
+
+
+@layer components {
+    .btn-nav {
+      @apply text-3xl text-zab-hombtn cursor-pointer;
+    }
+    
+    .menulist{
+      @apply text-sm text-black hover:underline px-2 py-0 rounded transition
+    }
+
+    .sidebtn{
+      @apply px-2 py-0.5 w-24 h-10 rounded shadow-md hover:font-semibold hover:shadow-lg text-white
+    }
+
+    .inputfieldborder{
+      @apply block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600
+    }
+
+  }
+  
